@@ -9,7 +9,7 @@ class CheckBoxController extends GetxController {
   // Untuk setter => object.namaVariable()
 
   // Bisa dipanggil di onChanged Checkbox
-  onChanged (bool? value) {
+  onChanged(bool? value) {
     checkbox(value);
   }
 }
