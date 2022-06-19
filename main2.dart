@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:posttest6_1915016121_rhennanurlisa/controller/splash_screen.dart';
-import 'package:firebase_core/firebase_core.dart';
+import 'screens/event_list.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+void main() {
   runApp(const MyApp());
 }
 
@@ -13,9 +10,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: SplashScreen(),
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.pink,
+      ),
+      home: EventList(),
     );
   }
 }
+
